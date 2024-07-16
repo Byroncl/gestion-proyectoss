@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #4d1d9b, #110650);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5em;
+  color: #9c0588;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-button:hover {
+  color: #6c0f97;
+  transform: translateY(-2px);
+}
+
+.form {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  color: #9c0588;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #edf2f7;
+}
+
+.input:focus {
+  background-color: #e2e8f0;
+}
+
+.select, .button, .li {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #edf2f7;
+}
+
+.button {
+  background-color: #9c0588;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #6c0f97;
+  transform: translateY(-2px);
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(45, 55, 72, 0.9);
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #9c0588;
+  transform: translateY(-2px);
+}
